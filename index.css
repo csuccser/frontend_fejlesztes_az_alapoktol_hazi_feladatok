@@ -1,0 +1,106 @@
+.paragraph {
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 50%;
+    margin-left: 25%;
+    color: rgb(195, 197, 201);
+    font-size: 1.15em;
+    font-family: "Slabo", sans-serif;
+}
+
+.paragraph img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.sender-form-container {
+    display: grid;
+    place-items: center;
+}
+
+.sender-form-label {
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: rgb(195, 197, 201);
+    font-size: 1.15em;
+    font-family: "Slabo", sans-serif;
+    text-align: end;
+}
+
+.sender-form-input {
+    height: 20px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.sender-form-textarea {
+    height: 100px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.title_1 {
+    text-align: center;
+    color: rgb(214, 123 ,121);
+    font-family: "Roboto", "Times New Roman", sans-serif, Times;
+    font-size: 4em;
+}
+
+.title_2 {
+    text-align: center;
+    color: rgb(214, 123 ,121);
+    font-family: "Roboto", "Times New Roman", sans-serif, Times;
+    font-size: 2em;
+}
+
+.background {
+    background-color: rgb(28, 29, 31);
+}
+
+.link-header {
+    color: rgb(77, 123, 200);
+    margin-left: 25%;
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+.link-footer {
+    color: rgb(77, 123, 200);
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: rgb(38, 40, 42);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+}
+
+code {
+    color: rgb(91, 155, 103);
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Slabo", sans-serif;
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Slabo27px-Regular.ttf") format("truetype");
+}
