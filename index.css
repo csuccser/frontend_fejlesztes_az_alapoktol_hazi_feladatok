@@ -1,3 +1,19 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Slabo", sans-serif;
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Slabo27px-Regular.ttf") format("truetype");
+}
+
 .paragraph {
     line-height: 1.5;
     padding-left: 10px;
@@ -24,8 +40,8 @@
 
 .sender-form-label {
     width: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: inline-block;
     color: rgb(195, 197, 201);
     font-size: 1.15em;
@@ -34,15 +50,17 @@
 }
 
 .sender-form-input {
-    height: 20px;
+    height: 30px;
     width: 200px;
     margin-left: 10px;
+    font-family: "Slabo", sans-serif;
 }
 
 .sender-form-textarea {
     height: 100px;
     width: 200px;
     margin-left: 10px;
+    font-family: "Slabo", sans-serif;
 }
 
 .title_1 {
@@ -89,18 +107,3 @@ code {
     color: rgb(91, 155, 103);
 }
 
-@font-face {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-    src: url("/fonts/Roboto-Black.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Slabo", sans-serif;
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-    src: url("/fonts/Slabo27px-Regular.ttf") format("truetype");
-}
