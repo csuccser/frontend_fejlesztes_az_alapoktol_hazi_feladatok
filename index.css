@@ -48,14 +48,14 @@
 .title_1 {
     text-align: center;
     color: rgb(214, 123 ,121);
-    font-family: "Roboto", "Times New Roman", sans-serif, Times;
+    font-family: "Roboto", sans-serif;
     font-size: 4em;
 }
 
 .title_2 {
     text-align: center;
     color: rgb(214, 123 ,121);
-    font-family: "Roboto", "Times New Roman", sans-serif, Times;
+    font-family: "Roboto", sans-serif;
     font-size: 2em;
 }
 
