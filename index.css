@@ -54,6 +54,21 @@
     width: 200px;
     margin-left: 10px;
     font-family: "Slabo", sans-serif;
+    background-color: rgb(28, 29, 31);
+    border: 1px solid rgb(62, 64, 69);
+    color: rgb(195, 197, 201);
+    border-radius: 5px;
+}
+
+.sender-form-input:focus {
+    background-color: rgb(28, 29, 31);
+    border: 2px solid rgb(40, 91, 236);
+    outline: none;
+}
+
+.sender-form-input::placeholder {
+    color: rgb(195, 197, 201);
+    font-size: 1em;
 }
 
 .sender-form-textarea {
@@ -61,7 +76,18 @@
     width: 200px;
     margin-left: 10px;
     font-family: "Slabo", sans-serif;
+    background-color: rgb(28, 29, 31);
+    border: 1px solid rgb(62, 64, 69);
+    color: rgb(195, 197, 201);
+    border-radius: 5px;
 }
+
+.sender-form-textarea:focus {
+    background-color: rgb(28, 29, 31);
+    border: 2px solid rgb(40, 91, 236);
+    outline: none;
+}
+
 
 .title_1 {
     text-align: center;
