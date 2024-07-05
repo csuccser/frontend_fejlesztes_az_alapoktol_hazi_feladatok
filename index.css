@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: "Slabo", sans-serif;
+    font-family: "Slabo";
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -23,7 +23,7 @@
     margin-left: 25%;
     color: rgb(195, 197, 201);
     font-size: 1.15em;
-    font-family: "Slabo", sans-serif;
+    font-family: "Slabo", "Times New Roman", sans-serif, Times;
 }
 
 .paragraph img {
@@ -45,7 +45,7 @@
     display: inline-block;
     color: rgb(195, 197, 201);
     font-size: 1.15em;
-    font-family: "Slabo", sans-serif;
+    font-family: "Slabo", "Times New Roman", sans-serif, Times;
     text-align: end;
 }
 
@@ -53,7 +53,7 @@
     height: 30px;
     width: 200px;
     margin-left: 10px;
-    font-family: "Slabo", sans-serif;
+    font-family: "Slabo", "Times New Roman", sans-serif, Times;
     background-color: rgb(28, 29, 31);
     border: 1px solid rgb(62, 64, 69);
     color: rgb(195, 197, 201);
@@ -75,7 +75,7 @@
     height: 100px;
     width: 200px;
     margin-left: 10px;
-    font-family: "Slabo", sans-serif;
+    font-family: "Slabo", "Times New Roman", sans-serif, Times;
     background-color: rgb(28, 29, 31);
     border: 1px solid rgb(62, 64, 69);
     color: rgb(195, 197, 201);
@@ -92,14 +92,14 @@
 .title_1 {
     text-align: center;
     color: rgb(214, 123 ,121);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Times New Roman", sans-serif, Times;
     font-size: 4em;
 }
 
 .title_2 {
     text-align: center;
     color: rgb(214, 123 ,121);
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Times New Roman", sans-serif, Times;
     font-size: 2em;
 }
 
