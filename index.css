@@ -26,6 +26,10 @@
     font-family: "Slabo", "Times New Roman", sans-serif, Times;
 }
 
+.par-anchor {
+    display: block;
+}
+
 .paragraph img {
     display: block;
     margin-left: auto;
