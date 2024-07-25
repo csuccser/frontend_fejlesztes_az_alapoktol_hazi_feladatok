@@ -9,12 +9,12 @@
 <body class="background">
 
     <header>
-        <a rel="footer" id="beginning" href="#end" class="link-header">Ugrás a végére</a>
+        <a rel="footer" id="beginning" href="#end" class="margin-left link-header">Ugrás a végére</a>
     </header>
 
     <h1 class="title_1">HTML összefoglaló</h1>
 
-    <p class="paragraph" id="p01">
+    <p class="margin-left paragraph" id="p01">
         A HTML (HyperText Markup Language) a weboldalak alapvető építőeleme. Ez a nyelv határozza meg a weboldalak
         szerkezetét és tartalmát, lehetővé téve a böngészők számára, hogy megjelenítsék azokat. A HTML segítségével
         meghatározhatjuk a szövegek, képek, linkek és egyéb elemek elrendezését a weboldalon. Az első HTML verziók óta a
@@ -34,7 +34,7 @@
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
 
-    <p class="paragraph" id="p02">
+    <p class="margin-left paragraph" id="p02">
         A HTML dokumentumok alapvető szerkezete néhány kulcsfontosságú elemet tartalmaz: a <code>&lt;!DOCTYPE html&gt;</code>
         deklarációt, a <code>&lt;html&gt;</code> elemet, amely az egész dokumentumot körülveszi, a <code>&lt;head&gt;</code>
         részt, ahol metaadatokat helyezünk el, és a <code>&lt;body&gt;</code> részt, ahol a tényleges tartalom található.
@@ -57,11 +57,11 @@
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
 
-    <p class="paragraph">
+    <p class="margin-left paragraph">
         <img src="img/dom-tree.png" alt="HTML Tag-ek fa struktúrában kirajzolva" loading="lazy">
     </p>
 
-    <p class="paragraph" id="p03">
+    <p class="margin-left paragraph" id="p03">
         A HTML elemek hierarchikus szerkezetet alkotnak, ami azt jelenti, hogy egyes elemek más elemekbe ágyazhatók. Például
         egy <code>&lt;div&gt;</code> elem tartalmazhat <code>&lt;p&gt;</code> (bekezdés) elemeket, <code>&lt;ul&gt;</code>
         (rendezett listák) elemeket, vagy akár más <code>&lt;div&gt;</code> elemeket is. Ez a hierarchia lehetővé teszi a
@@ -84,7 +84,7 @@
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
 
-    <p class="paragraph" id="p04">
+    <p class="margin-left paragraph" id="p04">
         A HTML5 bevezetésével számos új elem és attribútum vált elérhetővé, amelyek egyszerűsítik a webfejlesztést és
         javítják a felhasználói élményt. Például az <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, és <code>&lt;nav&gt;</code>
         elemek segítségével könnyebben strukturálhatjuk a tartalmat, míg az <code>&lt;audio&gt;</code> és <code>&lt;video&gt;</code>
@@ -113,7 +113,7 @@
         <a rel="next" href="#p05" target="_blank" class="par-anchor link-footer">Következő bekezdés megnyitása új lapon</a>
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
-    <p class="paragraph" id="p05">
+    <p class="margin-left paragraph" id="p05">
         A HTML önmagában nem rendelkezik stílusinformációkkal, ezért a CSS (Cascading Style Sheets)
         használatával formázhatjuk a HTML elemeket. A CSS segítségével beállíthatjuk az elemek színeit,
         betűtípusait, méreteit és elrendezését, ami segít abban, hogy a weboldalunk vizuálisan vonzó és
@@ -142,7 +142,7 @@
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
 
-    <p class="paragraph" id="p06">
+    <p class="margin-left paragraph" id="p06">
         A HTML és a CSS mellett a JavaScript használata teszi lehetővé az interaktív és dinamikus
         weboldalak létrehozását. A JavaScript segítségével különböző eseményeket kezelhetünk,
         animációkat hozhatunk létre, és kapcsolatot létesíthetünk a szerverrel aszinkron kéréseken
@@ -170,7 +170,7 @@
         <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link-footer">Bővebben</a>
     </p>
 
-    <p class="paragraph" id="p07">
+    <p class="margin-left paragraph" id="p07">
         A HTML és a CSS mellett a webfejlesztésben egyre fontosabb szerepet kapnak a különböző backend technológiák is,
         amelyek a szerver oldalon futnak, és biztosítják a webalkalmazások működését. A backend technológiák közé tartozik
         például a PHP, a Python, a Ruby és a Node.js, amelyek segítségével dinamikus és adatvezérelt webalkalmazásokat
@@ -197,27 +197,27 @@
     <div class="sender-form-container">
         <form action="#">
             <div>
-                <label class="sender-form-label" for="name">Név:</label>
+                <label class="sender-form-label-align sender-form-label" for="name">Név:</label>
                 <input class="sender-form-input" type="text" id="name" name="name" placeholder="Add meg a neved!" required>
             </div>
 
             <div>
-                <label class="sender-form-label" for="phone_number">Telszám:</label>
+                <label class="sender-form-label-align sender-form-label" for="phone_number">Telszám:</label>
                 <input class="sender-form-input" type="tel" id="phone_number" name="phone_number" placeholder="Add meg a telefonszámod!">
             </div>
 
             <div>
-                <label class="sender-form-label" for="email">E-mail:</label>
+                <label class="sender-form-label-align sender-form-label" for="email">E-mail:</label>
                 <input class="sender-form-input" type="email" id="email" name="email" placeholder="Add meg az email címed!" required>
             </div>
 
             <div>
-                <label class="sender-form-label" for="age">Kora:</label>
+                <label class="sender-form-label-align sender-form-label" for="age">Kora:</label>
                 <input class="sender-form-input" type="number" id="age" name="age" placeholder="Add meg a korod!" min="10" max="100">
             </div>
 
             <div>
-                <label class="sender-form-label" for="message">Üzenet:</label>
+                <label class="sender-form-label-align sender-form-label" for="message">Üzenet:</label>
                 <textarea class="sender-form-textarea" id="message" name="message"></textarea>
             </div>
 
@@ -227,7 +227,7 @@
         </form>
     </div>
 
-    <footer class="footer">
+    <footer class="margin-left footer margin-right">
         <a rel="header" id="end" href="#beginning" class="link-footer">Ugrás az elejére</a>
     </footer>
 
