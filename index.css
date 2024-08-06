@@ -108,8 +108,6 @@
 
 .sender-form-label {
     width: 100px;
-    margin-top: 15px;
-    margin-bottom: 15px;
     display: inline-block;
     color: var(--sender-form-label-color);
     font-size: 1.15em;
