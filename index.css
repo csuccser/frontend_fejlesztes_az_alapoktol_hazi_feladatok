@@ -44,39 +44,87 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Dark mode */
-        --background-color: rgb(28, 29, 31);
-        --paragraph-text-color: rgb(195, 197, 201);
-        --sender-form-label-color: rgb(195, 197, 201);
-        --sender-form-input-background-color: rgb(28, 29, 31);
-        --sender-form-border-color: rgb(62, 64, 69);
-        --sender-form-input-text-color: rgb(195, 197, 201);
-        --sender-form-border-color-focus: rgb(40, 91, 236);
-        --title-color: rgb(214, 123 ,121);
-        --sub-title-color: rgb(214, 123 ,121);
-        --link-color: rgb(77, 123, 200);
-        --footer-background-color: rgb(38, 40, 42);
-        --code-color: rgb(91, 155, 103);
-    }
+/*@media (prefers-color-scheme: dark) {*/
+/*    :root {*/
+/*        !* Dark mode *!*/
+/*        --background-color: rgb(28, 29, 31);*/
+/*        --paragraph-text-color: rgb(195, 197, 201);*/
+/*        --sender-form-label-color: rgb(195, 197, 201);*/
+/*        --sender-form-input-background-color: rgb(28, 29, 31);*/
+/*        --sender-form-border-color: rgb(62, 64, 69);*/
+/*        --sender-form-input-text-color: rgb(195, 197, 201);*/
+/*        --sender-form-border-color-focus: rgb(40, 91, 236);*/
+/*        --title-color: rgb(214, 123 ,121);*/
+/*        --sub-title-color: rgb(214, 123 ,121);*/
+/*        --link-color: rgb(77, 123, 200);*/
+/*        --footer-background-color: rgb(38, 40, 42);*/
+/*        --code-color: rgb(91, 155, 103);*/
+/*    }*/
+/*}*/
+/*@media (prefers-color-scheme: light) {*/
+/*    :root {*/
+/*        !* Light mode *!*/
+/*        --background-color: rgb(195, 197, 201);*/
+/*        --paragraph-text-color: rgb(28, 29, 31);*/
+/*        --sender-form-label-color: rgb(28, 29, 31);*/
+/*        --sender-form-input-background-color: rgb(195, 197, 201);*/
+/*        --sender-form-border-color: rgb(62, 64, 69);*/
+/*        --sender-form-input-text-color: rgb(195, 197, 201);*/
+/*        --sender-form-border-color-focus: rgb(77, 123, 200);*/
+/*        --title-color: rgb(214, 123 ,121);*/
+/*        --sub-title-color: rgb(214, 123 ,121);*/
+/*        --link-color: rgb(40, 91, 236);*/
+/*        --footer-background-color: rgb(38, 40, 42);*/
+/*        --code-color: rgb(91, 155, 103);*/
+/*    }*/
+/*}*/
+
+:root {
+    /* Light theme */
+    --background-color: rgb(195, 197, 201);
+    --paragraph-text-color: rgb(28, 29, 31);
+    --sender-form-label-color: rgb(28, 29, 31);
+    --sender-form-input-background-color: rgb(195, 197, 201);
+    --sender-form-border-color: rgb(62, 64, 69);
+    --sender-form-input-text-color: rgb(195, 197, 201);
+    --sender-form-border-color-focus: rgb(77, 123, 200);
+    --title-color: rgb(214, 123 ,121);
+    --sub-title-color: rgb(214, 123 ,121);
+    --link-color: rgb(40, 91, 236);
+    --footer-background-color: rgb(38, 40, 42);
+    --code-color: rgb(91, 155, 103);
 }
-@media (prefers-color-scheme: light) {
-    :root {
-        /* Light mode */
-        --background-color: rgb(195, 197, 201);
-        --paragraph-text-color: rgb(28, 29, 31);
-        --sender-form-label-color: rgb(28, 29, 31);
-        --sender-form-input-background-color: rgb(195, 197, 201);
-        --sender-form-border-color: rgb(62, 64, 69);
-        --sender-form-input-text-color: rgb(195, 197, 201);
-        --sender-form-border-color-focus: rgb(77, 123, 200);
-        --title-color: rgb(214, 123 ,121);
-        --sub-title-color: rgb(214, 123 ,121);
-        --link-color: rgb(40, 91, 236);
-        --footer-background-color: rgb(38, 40, 42);
-        --code-color: rgb(91, 155, 103);
-    }
+
+body.dark-theme {
+    /* Dark theme */
+    --background-color: rgb(28, 29, 31);
+    --paragraph-text-color: rgb(195, 197, 201);
+    --sender-form-label-color: rgb(195, 197, 201);
+    --sender-form-input-background-color: rgb(28, 29, 31);
+    --sender-form-border-color: rgb(62, 64, 69);
+    --sender-form-input-text-color: rgb(195, 197, 201);
+    --sender-form-border-color-focus: rgb(40, 91, 236);
+    --title-color: rgb(214, 123 ,121);
+    --sub-title-color: rgb(214, 123 ,121);
+    --link-color: rgb(77, 123, 200);
+    --footer-background-color: rgb(38, 40, 42);
+    --code-color: rgb(91, 155, 103);
+}
+
+body.high-contrast-theme {
+    /* High contrast theme */
+    --background-color: black;
+    --paragraph-text-color: yellow;
+    --sender-form-label-color: yellow;
+    --sender-form-input-background-color: black;
+    --sender-form-border-color: yellow;
+    --sender-form-input-text-color: yellow;
+    --sender-form-border-color-focus: cyan;
+    --title-color: magenta;
+    --sub-title-color: magenta;
+    --link-color: cyan;
+    --footer-background-color: black;
+    --code-color: lime;
 }
 
 .paragraph {
@@ -88,6 +136,11 @@
     color: var(--paragraph-text-color);
     font-size: 1.15em;
     font-family: "Slabo", "Times New Roman", sans-serif, Times;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .par-anchor {
