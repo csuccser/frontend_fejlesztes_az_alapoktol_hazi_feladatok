@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <title>HTML összefoglaló</title>
 </head>
 <body class="background">
 
     <header>
-        <a rel="footer" id="beginning" href="#end" class="margin-left link-header">Ugrás a végére</a>
+        <div class="margin-left header-content margin-right">
+            <a rel="footer" id="beginning" href="#end" class="link-header">Ugrás a végére</a>
+            <button id="theme-toggle" class="btn btn-primary">Megjelenítési téma váltás</button>
+        </div>
     </header>
 
     <h1 class="title_1">HTML összefoglaló</h1>
@@ -196,33 +201,33 @@
 
     <div class="sender-form-container">
         <form action="#">
-            <div>
-                <label class="sender-form-label-align sender-form-label" for="name">Név:</label>
-                <input class="sender-form-input" type="text" id="name" name="name" placeholder="Add meg a neved!" required>
+            <div class="mb-3 row">
+                <label class="form-label sender-form-label-align sender-form-label" for="name">Név:</label>
+                <input class="form-control sender-form-input" type="text" id="name" name="name" placeholder="Add meg a neved!" required>
+            </div>
+
+            <div class="mb-3 row">
+                <label class="form-label sender-form-label-align sender-form-label" for="phone_number">Telszám:</label>
+                <input class="form-control sender-form-input" type="tel" id="phone_number" name="phone_number" placeholder="Add meg a telefonszámod!">
+            </div>
+
+            <div class="mb-3 row">
+                <label class="form-label sender-form-label-align sender-form-label" for="email">E-mail:</label>
+                <input class="form-control sender-form-input" type="email" id="email" name="email" placeholder="Add meg az email címed!" required>
+            </div>
+
+            <div class="mb-3 row">
+                <label class="form-label sender-form-label-align sender-form-label" for="age">Kora:</label>
+                <input class="form-control sender-form-input" type="number" id="age" name="age" placeholder="Add meg a korod!" min="10" max="100">
+            </div>
+
+            <div class="mb-3 row">
+                <label class="form-label sender-form-label-align sender-form-label" for="message">Üzenet:</label>
+                <textarea class="form-control sender-form-textarea" id="message" name="message"></textarea>
             </div>
 
             <div>
-                <label class="sender-form-label-align sender-form-label" for="phone_number">Telszám:</label>
-                <input class="sender-form-input" type="tel" id="phone_number" name="phone_number" placeholder="Add meg a telefonszámod!">
-            </div>
-
-            <div>
-                <label class="sender-form-label-align sender-form-label" for="email">E-mail:</label>
-                <input class="sender-form-input" type="email" id="email" name="email" placeholder="Add meg az email címed!" required>
-            </div>
-
-            <div>
-                <label class="sender-form-label-align sender-form-label" for="age">Kora:</label>
-                <input class="sender-form-input" type="number" id="age" name="age" placeholder="Add meg a korod!" min="10" max="100">
-            </div>
-
-            <div>
-                <label class="sender-form-label-align sender-form-label" for="message">Üzenet:</label>
-                <textarea class="sender-form-textarea" id="message" name="message"></textarea>
-            </div>
-
-            <div>
-                <button type="submit">Küldés</button>
+                <button type="submit" class="btn btn-primary">Küldés</button>
             </div>
         </form>
     </div>
@@ -231,5 +236,7 @@
         <a rel="header" id="end" href="#beginning" class="link-footer">Ugrás az elejére</a>
     </footer>
 
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
