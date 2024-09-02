@@ -1,49 +1,3 @@
-@font-face {
-    font-family: "Roboto";
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-    src: url("/fonts/Roboto-Black.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Slabo";
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-    src: url("/fonts/Slabo27px-Regular.ttf") format("truetype");
-}
-
-@media only screen and (max-width: 360px) {
-    .margin-left {
-        margin-left: 10px;
-    }
-
-    .sender-form-label-align {
-        text-align: start;
-        margin-left: 10px;
-    }
-
-    .margin-right {
-        margin-right: 10px;
-    }
-}
-
-@media only screen and (min-width: 360px) {
-    .margin-left {
-        margin-left: 25%;
-    }
-
-    .sender-form-label-align {
-        text-align: end;
-        margin-left: 0;
-    }
-
-    .margin-right {
-        margin-right: 25%;
-    }
-}
-
 /*@media (prefers-color-scheme: dark) {*/
 /*    :root {*/
 /*        !* Dark mode *!*/
@@ -93,6 +47,7 @@
     --link-color: rgb(40, 91, 236);
     --footer-background-color: rgb(38, 40, 42);
     --code-color: rgb(91, 155, 103);
+    --highlight-color: green;
 }
 
 body.dark-theme {
@@ -109,6 +64,7 @@ body.dark-theme {
     --link-color: rgb(77, 123, 200);
     --footer-background-color: rgb(38, 40, 42);
     --code-color: rgb(91, 155, 103);
+    --highlight-color: yellow;
 }
 
 body.high-contrast-theme {
@@ -125,6 +81,53 @@ body.high-contrast-theme {
     --link-color: cyan;
     --footer-background-color: black;
     --code-color: lime;
+    --highlight-color: blue;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Slabo";
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+    src: url("/fonts/Slabo27px-Regular.ttf") format("truetype");
+}
+
+@media only screen and (max-width: 360px) {
+    .margin-left {
+        margin-left: 10px;
+    }
+
+    .sender-form-label-align {
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .margin-right {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .margin-left {
+        margin-left: 25%;
+    }
+
+    .sender-form-label-align {
+        text-align: end;
+        margin-left: 0;
+    }
+
+    .margin-right {
+        margin-right: 25%;
+    }
 }
 
 .paragraph {
@@ -141,6 +144,7 @@ body.high-contrast-theme {
 .header-content {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .par-anchor {
@@ -247,5 +251,26 @@ body.high-contrast-theme {
 
 code {
     color: var(--code-color);
+}
+
+.flex-search {
+    flex-grow: 2;
+}
+
+.search-btn-margin-padding {
+    margin: 0;
+    padding: 0;
+}
+
+.highlight {
+    background-color: var(--highlight-color);
+}
+
+.search-input {
+    outline: none;
+}
+
+.search-input-container {
+    max-width: 400px;
 }
 
