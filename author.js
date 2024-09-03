@@ -2,10 +2,10 @@
 
 function appendAuthorToHTML() {
     getRandomAuthor((randomAuthor) => {
-        const authorName = randomAuthor.name;
-        const authorMail = randomAuthor.email;
-        const authorPhoneNumber = randomAuthor.phone;
-        const companyName = randomAuthor.company.name;
+        const authorName = randomAuthor['name'];
+        const authorMail = randomAuthor['email'];
+        const authorPhoneNumber = randomAuthor['phone'];
+        const companyName = randomAuthor['company']['name'];
 
         const authorContainer = document.querySelector("#author_container");
 
