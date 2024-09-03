@@ -274,8 +274,11 @@ code {
     max-width: 400px;
 }
 
-.author_p {
+.author_field_item {
     margin-bottom: 0;
+    color: var(--paragraph-text-color);
+    font-size: 1.15em;
+    font-family: "Slabo", "Times New Roman", sans-serif, Times;
 }
 
 .author_container {
