@@ -40,7 +40,7 @@ function appendAuthorToHTML() {
 }
 
 async function getRandomAuthor(callback) {
-    const authors = await fetchAuthors((authors) => {
+    await fetchAuthors((authors) => {
         const randomIndex = Math.floor(Math.random() * authors.length);
         const randomAuthor = authors[randomIndex];
         callback(randomAuthor);
