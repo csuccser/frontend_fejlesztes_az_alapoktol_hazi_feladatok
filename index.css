@@ -274,3 +274,11 @@ code {
     max-width: 400px;
 }
 
+.author_p {
+    margin-bottom: 0;
+}
+
+.author_container {
+    margin-bottom: 16px;
+}
+
