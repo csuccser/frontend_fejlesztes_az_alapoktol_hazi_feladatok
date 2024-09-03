@@ -11,7 +11,7 @@ function appendAuthorToHTML() {
 
         const authorNameParagraph = document.createElement("p");
         authorNameParagraph.textContent = `Author: ${authorName}`;
-        authorNameParagraph.className = "author_field_item";
+        authorNameParagraph.className = "author-field-item";
         authorContainer.appendChild(authorNameParagraph);
 
         const emailLabel = document.createTextNode("Email: ")
@@ -21,19 +21,19 @@ function appendAuthorToHTML() {
         authorMailAnchor.textContent = authorMail;
 
         const span = document.createElement("span");
-        span.className = "author_field_item";
+        span.className = "author-field-item";
         span.appendChild(emailLabel);
         span.appendChild(authorMailAnchor);
         authorContainer.appendChild(span);
 
         const authorPhoneNumberParagraph = document.createElement("p");
         authorPhoneNumberParagraph.textContent = `Phone Number: ${authorPhoneNumber}`;
-        authorPhoneNumberParagraph.className = "author_field_item";
+        authorPhoneNumberParagraph.className = "author-field-item";
         authorContainer.appendChild(authorPhoneNumberParagraph);
 
         const companyNameParagraph = document.createElement("p");
         companyNameParagraph.textContent = `Company: ${companyName}`;
-        companyNameParagraph.className = "author_field_item";
+        companyNameParagraph.className = "author-field-item";
         authorContainer.appendChild(companyNameParagraph);
     }).then();
 

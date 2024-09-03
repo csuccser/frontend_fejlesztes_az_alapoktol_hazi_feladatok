@@ -274,7 +274,7 @@ code {
     max-width: 400px;
 }
 
-.author_field_item {
+.author-field-item {
     margin-bottom: 0;
     color: var(--paragraph-text-color);
     font-size: 1.15em;
