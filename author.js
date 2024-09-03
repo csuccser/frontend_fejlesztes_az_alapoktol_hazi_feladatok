@@ -16,7 +16,7 @@ function appendAuthorToHTML() {
 
         const emailLabel = document.createTextNode("Email: ")
         const authorMailAnchor = document.createElement("a");
-        authorMailAnchor.className = "link-footer";
+        authorMailAnchor.className = "link";
         authorMailAnchor.href = `mailto:${authorMail}`;
         authorMailAnchor.textContent = authorMail;
 
