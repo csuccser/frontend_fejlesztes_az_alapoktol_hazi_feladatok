@@ -89,7 +89,7 @@ body.high-contrast-theme {
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/Roboto-Black.woff2") format("woff2");
+    src: url("./fonts/Roboto-Black.woff2") format("woff2");
 }
 
 @font-face {
@@ -97,7 +97,7 @@ body.high-contrast-theme {
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
-    src: url("/fonts/Slabo27px-Regular.woff2") format("woff2");
+    src: url("./fonts/Slabo27px-Regular.woff2") format("woff2");
 }
 
 @media only screen and (max-width: 360px) {
