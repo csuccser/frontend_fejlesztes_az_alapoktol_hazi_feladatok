@@ -5,7 +5,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2P7D1TPGND"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-2P7D1TPGND');
@@ -13,31 +17,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="reset.css">
     <title>HTML összefoglaló</title>
 </head>
 <body class="background">
 
-    <header>
-        <div class="margin-left header-content margin-right">
-            <a rel="footer" id="beginning" href="#end" class="link-header">Ugrás a végére</a>
-            <div class="input-group mb-3 search-input-container" >
-                <input id="search_input" type="text" class="form-control search-input" placeholder="Keresés" aria-label="Keresés">
-                <div class="input-group-append">
+<header>
+    <div class="margin-left header-content margin-right" role="navigation">
+        <a tabindex="1" rel="footer" id="beginning" href="#end" class="link-header">Ugrás a végére</a>
+        <div class="input-group mb-3 search-input-container" role="search">
+            <input tabindex="2" id="search_input" type="text" class="form-control search-input" placeholder="Keresés"
+                   aria-label="Keresés">
+            <div class="input-group-append">
                     <span class="input-group-text search-btn-margin-padding">
-                        <button class="btn btn-outline-secondary" type="button" onclick="searchAndHighlight()">
+                        <button tabindex="3" class="btn btn-outline-secondary" type="button" onclick="searchAndHighlight()">
                             <i class="fas fa-search"></i>
                         </button>
                     </span>
-                </div>
             </div>
-            <button id="theme-toggle" class="btn btn-primary">Megjelenítési téma váltás</button>
         </div>
-    </header>
+        <button tabindex="4" id="theme-toggle" class="btn btn-primary">Megjelenítési téma váltás</button>
+    </div>
+</header>
 
-    <div id="content_container">
+<div id="content_container" role="main">
+    <article>
         <h1 class="title_1">HTML összefoglaló</h1>
 
         <p class="margin-left paragraph" id="estimated_reading_time_container"></p>
@@ -45,81 +52,123 @@
         <p class="margin-left paragraph" id="p01">
             A HTML (HyperText Markup Language) a weboldalak alapvető építőeleme. Ez a nyelv határozza meg a weboldalak
             szerkezetét és tartalmát, lehetővé téve a böngészők számára, hogy megjelenítsék azokat. A HTML segítségével
-            meghatározhatjuk a szövegek, képek, linkek és egyéb elemek elrendezését a weboldalon. Az első HTML verziók óta a
+            meghatározhatjuk a szövegek, képek, linkek és egyéb elemek elrendezését a weboldalon. Az első HTML verziók
+            óta a
             nyelv jelentős fejlődésen ment keresztül, és ma már számos új funkcióval rendelkezik. A HTML dokumentumok
-            hierarchikus szerkezetűek, ami azt jelenti, hogy egyes elemek más elemekbe ágyazhatók, ezzel lehetővé téve a komplex
-            elrendezések kialakítását. A HTML használatával könnyedén hozhatunk létre táblázatokat, listákat, formokat, és egyéb
+            hierarchikus szerkezetűek, ami azt jelenti, hogy egyes elemek más elemekbe ágyazhatók, ezzel lehetővé téve a
+            komplex
+            elrendezések kialakítását. A HTML használatával könnyedén hozhatunk létre táblázatokat, listákat, formokat,
+            és egyéb
             interaktív elemeket, amelyek gazdagítják a felhasználói élményt. Továbbá a HTML kompatibilis más webes
-            technológiákkal, mint például a CSS és a JavaScript, amelyekkel együttesen dinamikus és stílusos weboldalakat
-            készíthetünk. Ahogy a webfejlesztés tovább fejlődik, a HTML is folyamatosan új elemekkel és funkciókkal bővül, hogy
-            megfeleljen az egyre növekvő igényeknek és elvárásoknak. A HTML alapvetően egy egyszerű nyelv, amelyet könnyű
-            megtanulni, de mélyreható ismeretekkel rendkívül hatékony eszközzé válhat a webfejlesztők kezében. A jól strukturált
-            HTML kód alapvető fontosságú a keresőoptimalizálás (SEO) szempontjából is, mivel a keresőmotorok a HTML szerkezetét
-            és tartalmát elemzik a találati rangsorok meghatározásához. A HTML5 szabvány bevezetése óta számos új funkció és
-            elem vált elérhetővé, amelyek lehetővé teszik a modernebb és interaktívabb weboldalak készítését. A HTML tehát a
+            technológiákkal, mint például a CSS és a JavaScript, amelyekkel együttesen dinamikus és stílusos
+            weboldalakat
+            készíthetünk. Ahogy a webfejlesztés tovább fejlődik, a HTML is folyamatosan új elemekkel és funkciókkal
+            bővül, hogy
+            megfeleljen az egyre növekvő igényeknek és elvárásoknak. A HTML alapvetően egy egyszerű nyelv, amelyet
+            könnyű
+            megtanulni, de mélyreható ismeretekkel rendkívül hatékony eszközzé válhat a webfejlesztők kezében. A jól
+            strukturált
+            HTML kód alapvető fontosságú a keresőoptimalizálás (SEO) szempontjából is, mivel a keresőmotorok a HTML
+            szerkezetét
+            és tartalmát elemzik a találati rangsorok meghatározásához. A HTML5 szabvány bevezetése óta számos új
+            funkció és
+            elem vált elérhetővé, amelyek lehetővé teszik a modernebb és interaktívabb weboldalak készítését. A HTML
+            tehát a
             webfejlesztés egyik legfontosabb alapköve, amely nélkülözhetetlen a sikeres online jelenléthez.
-            <a rel="next" href="#p02" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="5" rel="next" href="#p02" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="6" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
 
         <p class="margin-left paragraph" id="p02">
             A HTML dokumentumok alapvető szerkezete néhány kulcsfontosságú elemet tartalmaz: a <code>&lt;!DOCTYPE html&gt;</code>
             deklarációt, a <code>&lt;html&gt;</code> elemet, amely az egész dokumentumot körülveszi, a <code>&lt;head&gt;</code>
-            részt, ahol metaadatokat helyezünk el, és a <code>&lt;body&gt;</code> részt, ahol a tényleges tartalom található.
+            részt, ahol metaadatokat helyezünk el, és a <code>&lt;body&gt;</code> részt, ahol a tényleges tartalom
+            található.
             Ezek az elemek biztosítják, hogy a böngészők helyesen értelmezzék és jelenítsék meg az oldalunkat. A <code>&lt;head&gt;</code>
-            rész további elemeket tartalmazhat, mint például a <code>&lt;title&gt;</code>, amely meghatározza az oldal címét,
+            rész további elemeket tartalmazhat, mint például a <code>&lt;title&gt;</code>, amely meghatározza az oldal
+            címét,
             valamint a <code>&lt;meta&gt;</code> elemeket, amelyek különféle metaadatokat definiálnak, például a
-            karakterkódolást és a viewport beállításokat. A <code>&lt;body&gt;</code> részben található az összes tartalom,
-            amelyet a felhasználó látni fog, beleértve a szövegeket, képeket, linkeket, táblázatokat, és egyéb médiaelemeket.
-            Fontos megérteni, hogy a HTML dokumentum hierarchikus szerkezetű, ahol az elemek egymásba ágyazhatók, lehetővé téve
+            karakterkódolást és a viewport beállításokat. A <code>&lt;body&gt;</code> részben található az összes
+            tartalom,
+            amelyet a felhasználó látni fog, beleértve a szövegeket, képeket, linkeket, táblázatokat, és egyéb
+            médiaelemeket.
+            Fontos megérteni, hogy a HTML dokumentum hierarchikus szerkezetű, ahol az elemek egymásba ágyazhatók,
+            lehetővé téve
             a bonyolultabb struktúrák létrehozását. Az alapvető HTML szerkezet ismerete elengedhetetlen a hatékony
-            webfejlesztéshez, mivel ez adja az oldal gerincét, amelyre a további stílusokat és funkciókat építhetjük. A <code>&lt;html&gt;</code>
-            és a <code>&lt;body&gt;</code> elemek köré épül az oldal minden tartalma és funkciója, biztosítva, hogy a böngészők
-            helyesen értelmezzék és jelenítsék meg az oldalt. A HTML szerkezetének helyes kialakítása nem csak a böngészők
-            számára fontos, hanem a keresőmotorok számára is, amelyek a HTML struktúráját használják az oldal tartalmának
-            értelmezéséhez. A jól megtervezett HTML szerkezet javítja az oldal hozzáférhetőségét is, különösen a fogyatékkal élő
+            webfejlesztéshez, mivel ez adja az oldal gerincét, amelyre a további stílusokat és funkciókat építhetjük. A
+            <code>&lt;html&gt;</code>
+            és a <code>&lt;body&gt;</code> elemek köré épül az oldal minden tartalma és funkciója, biztosítva, hogy a
+            böngészők
+            helyesen értelmezzék és jelenítsék meg az oldalt. A HTML szerkezetének helyes kialakítása nem csak a
+            böngészők
+            számára fontos, hanem a keresőmotorok számára is, amelyek a HTML struktúráját használják az oldal
+            tartalmának
+            értelmezéséhez. A jól megtervezett HTML szerkezet javítja az oldal hozzáférhetőségét is, különösen a
+            fogyatékkal élő
             felhasználók számára, akik különféle segédeszközöket használnak a weboldalak böngészéséhez. Az alapvető HTML
-            szerkezet megértése és alkalmazása tehát kulcsfontosságú a sikeres webfejlesztéshez, és alapot nyújt a további
+            szerkezet megértése és alkalmazása tehát kulcsfontosságú a sikeres webfejlesztéshez, és alapot nyújt a
+            további
             technológiák, mint például a CSS és a JavaScript használatához.
-            <a rel="next" href="#p03" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="7" rel="next" href="#p03" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="8" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
 
-        <p class="margin-left paragraph">
+        <p class="margin-left paragraph" role="img">
             <img src="img/dom-tree.png" alt="HTML Tag-ek fa struktúrában kirajzolva" loading="lazy">
         </p>
 
         <p class="margin-left paragraph" id="p03">
-            A HTML elemek hierarchikus szerkezetet alkotnak, ami azt jelenti, hogy egyes elemek más elemekbe ágyazhatók. Például
-            egy <code>&lt;div&gt;</code> elem tartalmazhat <code>&lt;p&gt;</code> (bekezdés) elemeket, <code>&lt;ul&gt;</code>
-            (rendezett listák) elemeket, vagy akár más <code>&lt;div&gt;</code> elemeket is. Ez a hierarchia lehetővé teszi a
-            bonyolultabb weboldalak létrehozását és a tartalom logikai elrendezését. Az elemek közötti hierarchikus kapcsolat
-            nemcsak a vizuális megjelenítés szempontjából fontos, hanem a keresőmotorok és az akadálymentesítési eszközök
-            számára is, mivel ezek az eszközök a HTML struktúrájára támaszkodnak az oldal tartalmának értelmezéséhez. Az elemek
-            helyes használata és elrendezése javítja a weboldal használhatóságát és hozzáférhetőségét. A HTML elemek különféle
+            A HTML elemek hierarchikus szerkezetet alkotnak, ami azt jelenti, hogy egyes elemek más elemekbe ágyazhatók.
+            Például
+            egy <code>&lt;div&gt;</code> elem tartalmazhat <code>&lt;p&gt;</code> (bekezdés) elemeket,
+            <code>&lt;ul&gt;</code>
+            (rendezett listák) elemeket, vagy akár más <code>&lt;div&gt;</code> elemeket is. Ez a hierarchia lehetővé
+            teszi a
+            bonyolultabb weboldalak létrehozását és a tartalom logikai elrendezését. Az elemek közötti hierarchikus
+            kapcsolat
+            nemcsak a vizuális megjelenítés szempontjából fontos, hanem a keresőmotorok és az akadálymentesítési
+            eszközök
+            számára is, mivel ezek az eszközök a HTML struktúrájára támaszkodnak az oldal tartalmának értelmezéséhez. Az
+            elemek
+            helyes használata és elrendezése javítja a weboldal használhatóságát és hozzáférhetőségét. A HTML elemek
+            különféle
             típusokba sorolhatók, mint például a szöveges elemek, listaelemek, formok és médiaelemek. Ezek az elemek
             együttműködve biztosítják, hogy a weboldal minden aspektusa jól szervezett és könnyen kezelhető legyen. A
-            hierarchikus struktúra alkalmazása segít abban, hogy az oldal tartalma logikusan és érthetően legyen felépítve, ami
-            különösen fontos a nagyobb, összetettebb weboldalak esetében. A HTML elemek közötti kapcsolatok és azok helyes
+            hierarchikus struktúra alkalmazása segít abban, hogy az oldal tartalma logikusan és érthetően legyen
+            felépítve, ami
+            különösen fontos a nagyobb, összetettebb weboldalak esetében. A HTML elemek közötti kapcsolatok és azok
+            helyes
             használata hozzájárul a jobb keresőoptimalizáláshoz is, mivel a keresőmotorok a jól strukturált és logikusan
-            felépített oldalakat előnyben részesítik a találati listákban. A hierarchikus struktúra megértése és alkalmazása
-            tehát alapvető fontosságú a hatékony webfejlesztéshez, és segít abban, hogy az oldalunk könnyen navigálható és
-            felhasználóbarát legyen. Ezen kívül a jól szervezett HTML kód hozzájárul a gyorsabb betöltési idők eléréséhez, mivel
-            a böngészők könnyebben és gyorsabban tudják feldolgozni a logikusan felépített struktúrákat. Összességében a HTML
+            felépített oldalakat előnyben részesítik a találati listákban. A hierarchikus struktúra megértése és
+            alkalmazása
+            tehát alapvető fontosságú a hatékony webfejlesztéshez, és segít abban, hogy az oldalunk könnyen navigálható
+            és
+            felhasználóbarát legyen. Ezen kívül a jól szervezett HTML kód hozzájárul a gyorsabb betöltési idők
+            eléréséhez, mivel
+            a böngészők könnyebben és gyorsabban tudják feldolgozni a logikusan felépített struktúrákat. Összességében a
+            HTML
             elemek helyes használata és hierarchikus elrendezése alapvető fontosságú a professzionális és hatékony
             webfejlesztéshez.
-            <a rel="next" href="#p04" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="9" rel="next" href="#p04" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="10" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
 
         <p class="margin-left paragraph" id="p04">
-            A HTML5 bevezetésével számos új elem és attribútum vált elérhetővé, amelyek egyszerűsítik a webfejlesztést és
-            javítják a felhasználói élményt. Például az <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, és <code>&lt;nav&gt;</code>
+            A HTML5 bevezetésével számos új elem és attribútum vált elérhetővé, amelyek egyszerűsítik a webfejlesztést
+            és
+            javítják a felhasználói élményt. Például az <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, és
+            <code>&lt;nav&gt;</code>
             elemek segítségével könnyebben strukturálhatjuk a tartalmat, míg az <code>&lt;audio&gt;</code> és <code>&lt;video&gt;</code>
-            elemek lehetővé teszik multimédiás tartalmak beágyazását további pluginok nélkül. Az új szintaktikai elemek, mint a
-            <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, és <code>&lt;aside&gt;</code> lehetővé teszik a tartalom
+            elemek lehetővé teszik multimédiás tartalmak beágyazását további pluginok nélkül. Az új szintaktikai elemek,
+            mint a
+            <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, és <code>&lt;aside&gt;</code> lehetővé teszik a
+            tartalom
             jobb szervezését és a weboldal szerkezetének átláthatóbbá tételét. A HTML5 támogatja az offline alkalmazások
-            készítését is a <code>&lt;canvas&gt;</code> és a <code>&lt;svg&gt;</code> elemek révén, amelyek lehetővé teszik a
+            készítését is a <code>&lt;canvas&gt;</code> és a <code>&lt;svg&gt;</code> elemek révén, amelyek lehetővé
+            teszik a
             vektorgrafikák és a dinamikus vizuális tartalmak
             megjelenítését. Az új API-k, mint a geolokációs API és a web storage API, további funkcionalitásokat
             kínálnak, amelyek lehetővé teszik a fejlesztők számára, hogy gazdagabb és interaktívabb élményeket
@@ -138,8 +187,9 @@
             HTML5 használata révén a fejlesztők képesek olyan weboldalakat készíteni, amelyek nemcsak vizuálisan
             vonzóak, hanem technológiailag is fejlettek és funkcionálisak, ezáltal hozzájárulva a web
             fejlődéséhez és a felhasználói élmény javításához.
-            <a rel="next" href="#p05" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="11" rel="next" href="#p05" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="12" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
         <p class="margin-left paragraph" id="p05">
             A HTML önmagában nem rendelkezik stílusinformációkkal, ezért a CSS (Cascading Style Sheets)
@@ -166,8 +216,9 @@
             kialakításában. A CSS használata tehát alapvető fontosságú a professzionális és vonzó weboldalak
             létrehozásához, amelyek megfelelnek a modern webes követelményeknek és felhasználói
             elvárásoknak.
-            <a rel="next" href="#p06" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="13" rel="next" href="#p06" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="14" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
 
         <p class="margin-left paragraph" id="p06">
@@ -194,81 +245,101 @@
             gazdagítják a weboldal vizuális és interaktív élményét. A JavaScript használata tehát alapvető
             fontosságú a modern webfejlesztésben, mivel lehetővé teszi a dinamikus és interaktív elemek
             létrehozását, amelyek növelik a weboldalak funkcionalitását és felhasználói élményét.
-            <a rel="next" href="#p07" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
+            <a tabindex="15" rel="next" href="#p07" target="_blank" class="par-anchor link">Következő bekezdés megnyitása új lapon</a>
+            <a tabindex="16" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
         </p>
 
         <p class="margin-left paragraph" id="p07">
-            A HTML és a CSS mellett a webfejlesztésben egyre fontosabb szerepet kapnak a különböző backend technológiák is,
-            amelyek a szerver oldalon futnak, és biztosítják a webalkalmazások működését. A backend technológiák közé tartozik
-            például a PHP, a Python, a Ruby és a Node.js, amelyek segítségével dinamikus és adatvezérelt webalkalmazásokat
-            fejleszthetünk. A PHP egy széles körben használt szerveroldali nyelv, amely különösen népszerű a tartalomkezelő
-            rendszerek (CMS) fejlesztésében, mint például a WordPress. A Python, különösen a Django és a Flask keretrendszerek
+            A HTML és a CSS mellett a webfejlesztésben egyre fontosabb szerepet kapnak a különböző backend technológiák
+            is,
+            amelyek a szerver oldalon futnak, és biztosítják a webalkalmazások működését. A backend technológiák közé
+            tartozik
+            például a PHP, a Python, a Ruby és a Node.js, amelyek segítségével dinamikus és adatvezérelt
+            webalkalmazásokat
+            fejleszthetünk. A PHP egy széles körben használt szerveroldali nyelv, amely különösen népszerű a
+            tartalomkezelő
+            rendszerek (CMS) fejlesztésében, mint például a WordPress. A Python, különösen a Django és a Flask
+            keretrendszerek
             révén, lehetővé teszi a gyors és hatékony webfejlesztést, míg a Ruby on Rails a gyors prototípus-készítést
-            támogatja. A Node.js, amely a JavaScript szerveroldali futtatókörnyezete, lehetővé teszi az egységes fejlesztést a
+            támogatja. A Node.js, amely a JavaScript szerveroldali futtatókörnyezete, lehetővé teszi az egységes
+            fejlesztést a
             kliens és a szerver oldalon is, ami egyszerűsíti a fejlesztési folyamatot. A backend technológiák használata
             lehetővé teszi az adatbázisok kezelését is, például a MySQL, PostgreSQL vagy a MongoDB segítségével, amelyek
-            tárolják a webalkalmazások adatait. Az adatbázisok lehetővé teszik a dinamikus tartalom kezelését, és biztosítják,
+            tárolják a webalkalmazások adatait. Az adatbázisok lehetővé teszik a dinamikus tartalom kezelését, és
+            biztosítják,
             hogy a felhasználók mindig naprakész információkat kapjanak. Az API-k (Application Programming Interfaces)
-            használata szintén egyre fontosabbá válik a webfejlesztésben, mivel lehetővé teszik a különböző rendszerek és
-            szolgáltatások közötti kommunikációt. Az API-k segítségével integrálhatunk külső szolgáltatásokat, például fizetési
-            rendszereket, térképeket vagy közösségi média funkciókat, amelyek növelik a webalkalmazások funkcionalitását és
-            felhasználói élményét. A backend technológiák tehát alapvető szerepet játszanak a modern webfejlesztésben, mivel
-            biztosítják a webalkalmazások megbízható és hatékony működését, valamint lehetővé teszik a dinamikus és interaktív
+            használata szintén egyre fontosabbá válik a webfejlesztésben, mivel lehetővé teszik a különböző rendszerek
+            és
+            szolgáltatások közötti kommunikációt. Az API-k segítségével integrálhatunk külső szolgáltatásokat, például
+            fizetési
+            rendszereket, térképeket vagy közösségi média funkciókat, amelyek növelik a webalkalmazások funkcionalitását
+            és
+            felhasználói élményét. A backend technológiák tehát alapvető szerepet játszanak a modern webfejlesztésben,
+            mivel
+            biztosítják a webalkalmazások megbízható és hatékony működését, valamint lehetővé teszik a dinamikus és
+            interaktív
             tartalmak kezelését.
-            <a rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" class="par-anchor link">Bővebben</a>
-            <a rel="next" href="#p01" class="par-anchor link">Első bekezdés</a>
+            <a tabindex="17" rel="external" href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"
+               class="par-anchor link">Bővebben</a>
+            <a tabindex="18" rel="next" href="#p01" class="par-anchor link">Első bekezdés</a>
         </p>
-    </div>
+    </article>
+</div>
 
 
-    <div id="author_container" class="margin-left paragraph author_container">
+<div role="contentinfo" id="author_container" class="margin-left paragraph author_container">
+</div>
 
-    </div>
+<h2 class="title_2">Küldés ismerősnek</h2>
 
-    <h2 class="title_2">Küldés ismerősnek</h2>
+<div class="sender-form-container">
+    <form action="#">
+        <div class="mb-3 row">
+            <label class="form-label sender-form-label-align sender-form-label" for="name">Név:</label>
+            <input tabindex="19" class="form-control sender-form-input" type="text" id="name" name="name" aria-describedby="A címzett neve akinek küldjük a cikket"
+                   placeholder="Add meg a neved!" required >
+        </div>
 
-    <div class="sender-form-container">
-        <form action="#">
-            <div class="mb-3 row">
-                <label class="form-label sender-form-label-align sender-form-label" for="name">Név:</label>
-                <input class="form-control sender-form-input" type="text" id="name" name="name" placeholder="Add meg a neved!" required>
-            </div>
+        <div class="mb-3 row">
+            <label class="form-label sender-form-label-align sender-form-label" for="phone_number">Telszám:</label>
+            <input tabindex="20" class="form-control sender-form-input" type="tel" id="phone_number" name="phone_number"
+                   placeholder="Add meg a telefonszámod!" aria-describedby="A címzett telefonszáma">
+        </div>
 
-            <div class="mb-3 row">
-                <label class="form-label sender-form-label-align sender-form-label" for="phone_number">Telszám:</label>
-                <input class="form-control sender-form-input" type="tel" id="phone_number" name="phone_number" placeholder="Add meg a telefonszámod!">
-            </div>
+        <div class="mb-3 row">
+            <label class="form-label sender-form-label-align sender-form-label" for="email">E-mail:</label>
+            <input tabindex="21" class="form-control sender-form-input" type="email" id="email" name="email" aria-describedby="A címzett email címe"
+                   placeholder="Add meg az email címed!" required>
+        </div>
 
-            <div class="mb-3 row">
-                <label class="form-label sender-form-label-align sender-form-label" for="email">E-mail:</label>
-                <input class="form-control sender-form-input" type="email" id="email" name="email" placeholder="Add meg az email címed!" required>
-            </div>
+        <div class="mb-3 row">
+            <label class="form-label sender-form-label-align sender-form-label" for="age">Kora:</label>
+            <input tabindex="22" class="form-control sender-form-input" type="number" id="age" name="age" aria-describedby="A címzett korát kell megadni ebben a mezőben"
+                   placeholder="Add meg a korod!" min="10" max="100">
+        </div>
 
-            <div class="mb-3 row">
-                <label class="form-label sender-form-label-align sender-form-label" for="age">Kora:</label>
-                <input class="form-control sender-form-input" type="number" id="age" name="age" placeholder="Add meg a korod!" min="10" max="100">
-            </div>
+        <div class="mb-3 row">
+            <label class="form-label sender-form-label-align sender-form-label" for="message">Üzenet:</label>
+            <textarea tabindex="23" class="form-control sender-form-textarea" id="message" name="message" aria-describedby="Ebben a mezőben lehet üzenetet írni a címzettnek"></textarea>
+        </div>
 
-            <div class="mb-3 row">
-                <label class="form-label sender-form-label-align sender-form-label" for="message">Üzenet:</label>
-                <textarea class="form-control sender-form-textarea" id="message" name="message"></textarea>
-            </div>
+        <div>
+            <button tabindex="24" type="submit" class="btn btn-primary">Küldés</button>
+        </div>
+    </form>
+</div>
 
-            <div>
-                <button type="submit" class="btn btn-primary">Küldés</button>
-            </div>
-        </form>
-    </div>
+<footer class="margin-left footer margin-right">
+    <a tabindex="25" rel="header" id="end" href="#beginning" class="link">Ugrás az elejére</a>
+</footer>
 
-    <footer class="margin-left footer margin-right">
-        <a rel="header" id="end" href="#beginning" class="link">Ugrás az elejére</a>
-    </footer>
-
-    <script src="author.js"></script>
-    <script src="theme-handler.js"></script>
-    <script src="calculator.js"></script>
-    <script src="search.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="author.js"></script>
+<script src="theme-handler.js"></script>
+<script src="calculator.js"></script>
+<script src="search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
